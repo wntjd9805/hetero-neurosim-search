@@ -1,1 +1,1 @@
-# hetero_neurosim_search
+# hetero-neurosim-search
