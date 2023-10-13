@@ -1,5 +1,5 @@
 # hetero_neurosim_search
-Hetero_neurosim_search is a end-to-end design automation tool for neuromorphic architectures by incorporating heterogeneous tile/PE/SA sizes. For full details, please see our recent ICCAD 2023 paper
+Hetero_neurosim_search is an end-to-end design automation tool for neuromorphic architectures by incorporating heterogeneous tile/PE/SA sizes. For full details, please see our recent ICCAD 2023 paper.
 If you use this tool in your research, please cite : 
 ## Pre-requisites
 
