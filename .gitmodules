@@ -1,0 +1,3 @@
+[submodule "booksim2"]
+	path = booksim2
+	url = https://github.com/wntjd9805/hetero-neurosim-search_booksim2.git

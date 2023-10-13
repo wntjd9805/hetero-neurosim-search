@@ -1,0 +1,14 @@
+src/examples/anynet/anynet_file*
+Inference_pytorch/__pycache__/
+Inference_pytorch/.pkl_memoize_py3/
+Inference_pytorch/layer_record_*/
+Inference_pytorch/record_*/
+Inference_pytorch/neurosim_result/
+Inference_pytorch/search_result/
+Inference_pytorch/shape/
+Inference_pytorch/summary/
+Inference_pytorch/log/default/
+Inference_pytorch/log/models/
+*.pyc
+*.o
+*.obj

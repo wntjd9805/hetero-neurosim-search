@@ -1,0 +1,3 @@
+sa_set = 64,128
+pe_set = 8
+tile_set = 16
