@@ -5,7 +5,7 @@ If you use this tool in your research, please cite :
 
 ### System dependencies
 
-We tested our code on Ubuntu 18.04 amd64 system. We recommend using the nvidia docker image.
+We tested our code on Ubuntu 18.04 amd64 system. We recommend using the Nvidia docker image.
 
 ```jsx
 docker pull nvidia/cuda:11.0.3-devel-ubuntu18.04
@@ -19,7 +19,7 @@ Software pre-requisites for installing from the source should be satisfied for t
 - [Booksim2](https://github.com/booksim/booksim2.git)
 - [TVM](https://github.com/apache/tvm)
 
-We extended NeuroSim 1.3 and BookSim2 to simulate the ReRAM-based analog CiM architecture with a mesh interconnect. Please follow this documentation to install all dependencies
+We extended NeuroSim 1.3 and BookSim2 to simulate the ReRAM-based analog CiM architecture with a mesh interconnect. Please the follow this documentation to install all dependencies
 
 In Ubuntu 18.04 amd64 system, following commands install package dependencies:
 
@@ -67,7 +67,7 @@ cargo install pueue
 
 ## Setup
 
-Install and build hetero_neurosim_search repositories from the source. We prepared installation script (docker/install.sh):
+Install and build hetero_neurosim_search repositories from the source. We prepared the installation script (docker/install.sh):
 
 ```bash
 cd "$HOME"
@@ -95,7 +95,7 @@ Now, the directory should look like this:
 ./hetero-neurosim-search/booksim2
 ```
 
-Finally, you need to set the following environment variables, and include them to .bashrc for later session.
+Finally, you need to set the following environment variables and include them to .bashrc for later session.
 
 ```bash
 export TVM_HOME=/root/tvm
