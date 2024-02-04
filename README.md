@@ -72,8 +72,10 @@ Install and build hetero_neurosim_search repositories from the source. We prepar
 ```bash
 cd "$HOME"
 git clone --recursive https://github.com/wntjd9805/hetero-neurosim-search.git
-git clone --recursive https://github.com/apache/tvm tvm
 git clone https://github.com/Glitchfix/TOPSIS-Python.git
+git clone --recursive https://github.com/apache/tvm tvm
+cd tvm
+git checkout v0.13.0
 mkdir tvm/build
 cp hetero-neurosim-search/config.cmake tvm/build
 cd tvm/build
