@@ -218,7 +218,7 @@ def make_args(config):
   #clkFreq = 1e9
   FPS = 1/FPS_latency
   conv_dense=0
-  chip_width = math.ceil(math.sqrt(tot_cluster_tile))+1
+  chip_width = math.ceil(math.sqrt(tot_cluster_tile))+2
   X = np.linspace(-1,-1,chip_width)
   Y = np.linspace(-1,-1,chip_width)
   tile_grid,tile_type = np.meshgrid(X,Y)
@@ -389,7 +389,7 @@ for config in CONFIG:
         LATENCY[f'{layername}_SA_row:{NUM_ROW}_SA_col:{NUM_COL}_PE:{PE}_TL:{Tile}']=latency
         if layername not in All_layer:
           All_layer.append(layername)
-      elif l.find("readDynamicEnergy is:")!= -1 and l.find("layer")!= -1:
+      elif l.find("s readDynamicEnergy is:")!= -1 and l.find("layer")!= -1:
         layername = l.split("\'")[0]
         l=l.split("\'")[1]
         readDynamicEnergy = l.split(":")[1]

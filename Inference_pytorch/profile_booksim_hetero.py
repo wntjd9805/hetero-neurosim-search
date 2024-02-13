@@ -911,7 +911,7 @@ for config in CONFIG:
         LATENCY[f'{layername}_SA_row:{NUM_ROW}_SA_col:{NUM_COL}_PE:{PE}_TL:{Tile}']=latency
         if layername not in All_layer:
           All_layer.append(layername)
-      elif l.find("readDynamicEnergy is:")!= -1 and l.find("layer")!= -1:
+      elif l.find("s readDynamicEnergy is:")!= -1 and l.find("layer")!= -1:
         layername = l.split("\'")[0]
         l=l.split("\'")[1]
         readDynamicEnergy = l.split(":")[1]
@@ -1307,7 +1307,7 @@ for exec_set in execute_set:
       print(len(t.rank_to_best_similarity()))
       for beam in range(len(t.rank_to_best_similarity())):
         print("beam",overlap_count.values())
-        if sum(overlap_count.values()) < args.beam_size_m:
+        if len(overlap_count) < args.beam_size_m:
           pal = pareto_label[str(paretoPoints_list[t.rank_to_best_similarity()[beam]-1][0])+str(paretoPoints_list[t.rank_to_best_similarity()[beam]-1][1])+str(paretoPoints_list[t.rank_to_best_similarity()[beam]-1][2])][0]
           print("pal.split()[0]",pal.split("_")[0])
           if pal.split("_")[0] in overlap_count:
