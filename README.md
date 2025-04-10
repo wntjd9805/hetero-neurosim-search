@@ -76,6 +76,8 @@ git clone https://github.com/Glitchfix/TOPSIS-Python.git
 git clone --recursive https://github.com/apache/tvm tvm
 cd tvm
 git checkout v0.13.0
+cd tvm/3rdparty/dmlc-core
+git checkout a355fbf49da01db456c4368a244c9dbe865eb079
 mkdir tvm/build
 cp hetero-neurosim-search/config.cmake tvm/build
 cd tvm/build
